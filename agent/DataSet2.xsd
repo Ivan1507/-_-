@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet2" targetNamespace="http://tempuri.org/DataSet2.xsd" xmlns:mstns="http://tempuri.org/DataSet2.xsd" xmlns="http://tempuri.org/DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet2" msprop:Generator_DataSetName="DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Agency" msprop:Generator_TableClassName="AgencyDataTable" msprop:Generator_TableVarName="tableAgency" msprop:Generator_TablePropName="Agency" msprop:Generator_RowDeletingName="AgencyRowDeleting" msprop:Generator_RowChangingName="AgencyRowChanging" msprop:Generator_RowEvHandlerName="AgencyRowChangeEventHandler" msprop:Generator_RowDeletedName="AgencyRowDeleted" msprop:Generator_UserTableName="Agency" msprop:Generator_RowChangedName="AgencyRowChanged" msprop:Generator_RowEvArgName="AgencyRowChangeEvent" msprop:Generator_RowClassName="AgencyRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_ag" msprop:Generator_ColumnVarNameInTable="columnid_ag" msprop:Generator_ColumnPropNameInRow="id_ag" msprop:Generator_ColumnPropNameInTable="id_agColumn" msprop:Generator_UserColumnName="id_ag" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="num_of_deal" msprop:Generator_ColumnVarNameInTable="columnnum_of_deal" msprop:Generator_ColumnPropNameInRow="num_of_deal" msprop:Generator_ColumnPropNameInTable="num_of_dealColumn" msprop:Generator_UserColumnName="num_of_deal" type="xs:int" />
+              <xs:element name="id_kv" msprop:Generator_ColumnVarNameInTable="columnid_kv" msprop:Generator_ColumnPropNameInRow="id_kv" msprop:Generator_ColumnPropNameInTable="id_kvColumn" msprop:Generator_UserColumnName="id_kv" type="xs:int" />
+              <xs:element name="id_pk" msprop:Generator_ColumnVarNameInTable="columnid_pk" msprop:Generator_ColumnPropNameInRow="id_pk" msprop:Generator_ColumnPropNameInTable="id_pkColumn" msprop:Generator_UserColumnName="id_pk" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Agency" />
+      <xs:field xpath="mstns:id_ag" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

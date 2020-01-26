@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet3" targetNamespace="http://tempuri.org/DataSet3.xsd" xmlns:mstns="http://tempuri.org/DataSet3.xsd" xmlns="http://tempuri.org/DataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet3" msprop:Generator_DataSetName="DataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Buyer" msprop:Generator_TableClassName="BuyerDataTable" msprop:Generator_TableVarName="tableBuyer" msprop:Generator_TablePropName="Buyer" msprop:Generator_RowDeletingName="BuyerRowDeleting" msprop:Generator_RowChangingName="BuyerRowChanging" msprop:Generator_RowEvHandlerName="BuyerRowChangeEventHandler" msprop:Generator_RowDeletedName="BuyerRowDeleted" msprop:Generator_UserTableName="Buyer" msprop:Generator_RowChangedName="BuyerRowChanged" msprop:Generator_RowEvArgName="BuyerRowChangeEvent" msprop:Generator_RowClassName="BuyerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_pk" msprop:Generator_ColumnVarNameInTable="columnid_pk" msprop:Generator_ColumnPropNameInRow="id_pk" msprop:Generator_ColumnPropNameInTable="id_pkColumn" msprop:Generator_UserColumnName="id_pk" type="xs:int" />
+              <xs:element name="FIO" msprop:Generator_ColumnVarNameInTable="columnFIO" msprop:Generator_ColumnPropNameInRow="FIO" msprop:Generator_ColumnPropNameInTable="FIOColumn" msprop:Generator_UserColumnName="FIO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tlfn" msprop:Generator_ColumnVarNameInTable="columntlfn" msprop:Generator_ColumnPropNameInRow="tlfn" msprop:Generator_ColumnPropNameInTable="tlfnColumn" msprop:Generator_UserColumnName="tlfn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Buyer" />
+      <xs:field xpath="mstns:id_pk" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
